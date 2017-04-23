@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		#d1 {
+			margin-top: 10px;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			opacity: 0.5;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1"></div>
+	<input id="bt" type="button" value="变">
+	<script src=" move.v6.js "></script>
+	<!-- <script src="../study_code/zhufeng.animate.js"></script> -->
+	<!-- <script src="../study_code/miaov.mTween.js"></script> -->
+
+	<script>
+		var div1 = document.getElementById('d1');
+		var btn = document.getElementById('bt');
+		btn.onclick = function(argument) {
+			startMove(div1, {width: 300, height:300}, 300, 'easeOutBounce');
+		}	
+	</script>
+</body>
+</html>
